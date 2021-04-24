@@ -1,0 +1,35 @@
+nav.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .arrow {
+    svg {
+      width: 1rem;
+      height: auto;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 100%;
+    }
+
+    .cart {
+      font-size: 12px;
+      font-weight: 500;
+      background-color: $yellow;
+      padding: 0.55rem 0.65rem;
+      border-radius: 0.6rem;
+    }
+
+    svg {
+      margin: 0 2rem;
+    }
+  }
+}

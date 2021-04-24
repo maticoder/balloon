@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import Navbar from "./components/Navbar.js";
+import Title from "./components/Title.js";
+import Quantity from "./components/Quantity.js";
+import Slider from "./components/Slider.js";
+import Pricing from "./components/Pricing.js";
+import Details from "./components/Details.js";
+
+import "./App.scss";
+
+const App = () => {
+  const [quantity, setQuantity] = useState(30);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Title />
+      <Quantity quantity={quantity} />
+      <Slider />
+      <Pricing />
+      <Details />
     </div>
   );
-}
+};
 
 export default App;

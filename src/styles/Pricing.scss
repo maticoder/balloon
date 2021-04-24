@@ -1,0 +1,70 @@
+.pricing {
+  span {
+    font-size: 0.875rem;
+  }
+
+  .delivery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: $gray;
+    }
+
+    .supply {
+      display: flex;
+      align-items: center;
+
+      span {
+        color: $black;
+        font-weight: 500;
+      }
+
+      .truck {
+        padding: 0.4rem 1rem;
+        border-radius: 0.625rem;
+        background-color: $light-gray;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+
+    span:nth-child(1) {
+      font-size: 0.875rem;
+      color: $gray;
+    }
+
+    span:nth-child(2) {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  .add {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      font-weight: 500;
+      margin-top: 4rem;
+      border: none;
+      background-color: $yellow;
+      padding: 1rem 1.5rem;
+      border-radius: 0.625rem;
+    }
+  }
+}

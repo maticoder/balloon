@@ -1,0 +1,11 @@
+.quantity {
+  margin-top: 2.5rem;
+  span {
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    &:first-child {
+      margin-right: 0.875rem;
+    }
+  }
+}
